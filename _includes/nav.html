@@ -1,0 +1,32 @@
+            <!-- Header -->
+      <div id="header">
+       <div class='overlay'></div>
+
+        <!-- Inner -->
+          <div class="inner">
+            <header>
+              <h1><a href="#" id="logo">
+                 {% for post in site.categories.title %}
+                    {{ post.title }}
+                  </a></h1>
+                  <a href="#banner" class="button circled scrolly">{{ post.button-text }}</a>
+                </header>
+                {% endfor %}
+
+            <footer>
+            </footer>
+          </div>
+        
+        <!-- Nav -->
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#register" class="call-modal">Register</a></li>
+              <li><a href="#disqus_thread" class="scrolly">Comments</a></li>
+              <li><a href="#disqus_thread" class="scrolly">Contact us</a></li>
+            </ul>
+          </nav>
+            
+      </div>
+
+

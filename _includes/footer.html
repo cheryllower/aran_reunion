@@ -1,0 +1,40 @@
+  <!-- Footer -->
+      <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="12u">
+              
+              <!-- Contact -->
+                <section class="contact">
+                {% for post in site.categories.footer %}
+                  <header>
+                    <h3>{{ post.title }}</h3>
+                  </header>
+                  <p>{{ post.content }}</p>
+<!--                   <ul class="icons">
+                    <li><a href="#" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+                    <li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+                    <li><a href="#" class="fa fa-google-plus solo"><span>Google+</span></a></li>
+                    <li><a href="#" class="fa fa-linkedin solo"><span>Linkedin</span></a></li>
+                  </ul> -->
+                </section>
+              
+              <!-- Copyright -->
+                <div class="copyright">
+                  <ul class="menu">
+                    <li>{{ post.lower-footer}}</li>
+                    <li>{{ post.lower-year}}</li>
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      {% include eventbrite_modal.html %}
+
+      {% include scripts.html %}
+</body>
+</html> 
