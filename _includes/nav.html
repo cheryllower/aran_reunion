@@ -5,11 +5,15 @@
         <!-- Inner -->
           <div class="inner">
             <header>
-              <h1><a href="#" id="logo">
+              <h1>
+              <a href="#" id="logo">
                  {% for post in site.categories.title %}
                     {{ post.title }}
-                  </a></h1>
+              </a>
+              </h1>
+                  <h2>{{ post.date-text }} </h2>
                   <a href="#banner" class="button circled scrolly">{{ post.button-text }}</a>
+
                 </header>
                 {% endfor %}
 
