@@ -1,0 +1,17 @@
+      {% for post in site.categories.schedule %}
+    <!-- Banner -->
+      <div id="banner">
+          <h2>{{ post.title }} <strong>{{ post.year-text }}</strong>.</h2>
+          <h3>{{ post.sub-title }}.</h3>
+          <span class="byline">
+          </span>
+          <div class="row">
+            <div class="8u -2u">
+              <p>
+                {{ post.content }}
+              </p>
+            </div>
+          </div>
+          
+        {% endfor %}        
+      </div>
