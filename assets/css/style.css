@@ -1640,8 +1640,25 @@
 /* Custom                                                                        */
 /*********************************************************************************/
 
-			#banner h3 {
-				font-size: 2em;
-				font-style: italic;
-			}
+#banner h3 {
+	font-size: 2em;
+	font-style: italic;
+}
+
+.tbl_header {
+	background: #ef8376;
+	color: #fff;
+	font-size: 1.4em;
+	padding:10px;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+#main h3 {
+	margin-top: 35px;
+}
 
